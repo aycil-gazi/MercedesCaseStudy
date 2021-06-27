@@ -1,43 +1,52 @@
-#  Case Study
+# DCP QA Quiz
 
-## Bağımlılıklar
+## Dependencies
 
 - Java
 - Maven
+- TestNG
+- Allure
 
-## Kurulum
 
-1. Repository'yi klonlayın
+## Installation
+
+1. Clone the repository
 
 ```shell
-git clone https://github.com/gazi-aycil
+git clone https://github.com/gazi-aycil/MercedesCaseStudy
 ```
 
-2. Maven ile bağımlılıkları kurun.
+2. Setup the maven dependencies.
 
 ```shell
 mvn compile
 ```
 
-3. data.json dosyasını düzenleyin.
+3. Configure the data.json file for test data.
 
 
-## Testleri Çalıştırma
+## Running Test Scripts
 
-**Chrome ile çalıştırmak için;**
+**For Chrome Browser;**
 ```shell
 DRIVER=chrome mvn test
 ```
 
-**Firefox ile çalıştırmak için;**
+**For Firefox Browser;**
 
 ```shell
 DRIVER=firefox mvn test
 ```
 
-Herhangi bir driver belirtilmediği durumda testler `Chrome` ile çalışacaktır.
+
+If the browser not selected, the test is set to run in the "Chrome" browser.
 
 
-## Raporlar ve ekran görüntüleri
+## Reports
 
-testleri çalıştırdıktan sonra raporlar `./allure-results` dizininde oluşturulacaktır. Raporları `allure serve` komutunu çalıştırarak raporları görebilirsiniz. 
+
+After running the tests the reports will be generated in the `./allure-results` directory.
+
+To be able to see reports as html format please follow the installation instructions for yor local OS from the link (https://docs.qameta.io/allure/)
+
+After installation allure fw for your local OS you can see the reports by running the `allure serve` command.
