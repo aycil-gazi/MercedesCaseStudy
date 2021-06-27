@@ -13,7 +13,7 @@
 1. Clone the repository
 
 ```shell
-git clone https://github.com/gazi-aycil/MercedesCaseStudy
+git clone https://github.com/aycil-gazi/MercedesCaseStudy
 ```
 
 2. Setup the maven dependencies.
